@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>MobileNet vs Google Lens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="vs.jpg">
+        <center>
+        <h3 class="btn btn-primary heading"><img src="google_lens_image.png"><br><hr><span class="vs">VS</span><br><hr><p class="btn btn-info mobilenet">MobileNet</p></h3>
+      <ol>
+          <div class="main_div col-xs-12">
+              <li class="col-sm-4 col-xs-12">
+                  <b>Test Image: </b>
+                  <img class="img-responsive image" src="bottle.jpg">
+              </li>
+              <h5 class="col-sm-4 col-xs-12 output">
+                  Output on Google Lens: <span>Lutein Oil, Water Bottle</span>
+              </h5>
+              <h5 class="col-sm-4 col-xs-12 output">
+                Output on MobileNet: <span>water bottle</span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+                <h4 class="output">Result: <h4 class="result">MobileNet</h4> wins</h4>
+                <hr>
+                <h4></h4>
+            </div>
+          </div>
+          <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image_aventador" src="car.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Lamborghini Aventador</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>racer, race car, racing car</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+            </div>
+        </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="globe.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Globe</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>ballumm</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+        </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="glue stick.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Scoobies Green Coloured Glue Stick</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>rubber eraser, rubber, pencil eraser</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+        </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="highliter.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>China Laser Cut Acrylic Diffusion Sheet</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>lighter, light, igniter, ignitor</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Both Lose</h4></h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="pencil.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Pencil</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>letter opener, paper knife, paperknife</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="phone.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Samsung Galaxy Note10</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>lighter, light, igniter, ignitor</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive imagee" src="T.V.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>49 inches LG Smart Uhd 4k Webo's LED TV</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>television, television system</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins, although the T.V. is a 48 inches Samsung Smart television, it said it is a smart tv that is why it gets a point.</h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="Telephone.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Beetel Phone</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>pay-phone, pay-station</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+        <div class="main_div col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image: </b>
+                <img class="img-responsive image" src="watch.jpg">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 output">
+                Output on Google Lens: <span>Fastrack 38047PP01 Trendies Digital Watch</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 output">
+              Output on MobileNet: <span>stop watch, stopwatch</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4 class="output">Result: <h4 class="result">Google Lens</h4> wins</h4>
+            <hr>
+            <h4></h4>
+        </div>
+    </div>
+    <div class="conclusion">
+        <h4 class="btn btn-primary">I have tested 10 images, 1 was a tie. Google Lens won 8 times. MobileNet won only once.</h4>
+    </div>
+      </ol>   
+    </center>
+    <br>
+    <div class="copy_right_footer">
+        Devloped By: Ramyak Jain
+    </div>
+    </body>
+</html>

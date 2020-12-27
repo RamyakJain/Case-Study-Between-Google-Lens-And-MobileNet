@@ -1,0 +1,59 @@
+.heading{
+    width: 90%;
+    border: 5px solid blue;
+    border-radius: 100px;
+}
+.vs{
+    color: lightgreen;
+    font-size: 20px;
+}
+.main_div{
+     background-color: grey;
+     border: 5px solid grey;
+     border-radius: 20px;
+     margin-top: 30px;
+}
+.image{
+    height: 50%;
+}
+b{
+    font-size: 20px;
+}
+.output{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 19%;
+    margin: 15px;
+}
+.imagee{
+    height: 30%;
+}
+.image_aventador{
+    width: 100%;
+}
+.result{
+    font-weight: bold;
+}
+.copy_right_footer{
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    line-height: 3;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+ol{
+    margin-bottom: 50px;
+}
+.conclusion{
+   width: 100%;
+   font-size: 20px;
+}
+body{
+    font-family: 'Langar', cursive;
+}
